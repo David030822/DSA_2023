@@ -1,0 +1,3 @@
+C:/Users/David/CLionProjects/Prog_Labs/DSA_2023/Labor_2/cmake-build-debug/CMakeFiles/Labor_2.dir
+C:/Users/David/CLionProjects/Prog_Labs/DSA_2023/Labor_2/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/David/CLionProjects/Prog_Labs/DSA_2023/Labor_2/cmake-build-debug/CMakeFiles/rebuild_cache.dir

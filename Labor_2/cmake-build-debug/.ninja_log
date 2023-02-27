@@ -1,0 +1,8 @@
+# ninja log v5
+0	126	6991906482412704	CMakeFiles/Labor_2.dir/main.c.obj	a4d46c3f284020b2
+128	289	6991906484005830	Labor_2.exe	4ec0412cf24a36c0
+3	217	6991909005111166	build.ninja	dbabbc38783ed40a
+8	139	6991909007012666	CMakeFiles/Labor_2.dir/main.c.obj	a4d46c3f284020b2
+4	116	6991909312157476	CMakeFiles/Labor_2.dir/main.c.obj	a4d46c3f284020b2
+8	155	6991909312560072	CMakeFiles/Labor_2.dir/sources/functions.c.obj	de74f32c2d7be8e
+155	447	6991909315351077	Labor_2.exe	88e8cc7eeb7b9a89
