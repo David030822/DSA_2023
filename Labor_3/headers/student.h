@@ -4,14 +4,17 @@
 
 #ifndef LABOR_3_STUDENT_H
 #define LABOR_3_STUDENT_H
+#include <stdio.h>
+#include <stdlib.h>
+
 typedef struct Date_t{
     int year;
     int month;
     int day;
 }Date_t;
 
-enum GENDER{
-    MALE,
+enum Gender{
+    MALE = 0,
     FEMALE
 };
 
@@ -20,10 +23,11 @@ typedef struct Student_t{
     char neptuneCode[9];
     char birthPlace[26];
     Date_t dateOfBirth;
-    enum GENDER gender;
-    float examResult;
+    enum Gender gender;
+    double examResult;
 }Student_t;
 
 void readStudentDetails(Student_t *pStudent);
+void printStudent(Student_t student);
 
 #endif //LABOR_3_STUDENT_H
