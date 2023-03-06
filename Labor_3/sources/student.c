@@ -1,7 +1,7 @@
 //
 // Created by David on 2023. 02. 27..
 //
-#include "student.h"
+#include "../headers/student.h"
 
 void readStudentDetails(Student_t *pStudent)
 {
@@ -24,3 +24,4 @@ void printStudent(Student_t student)
     printf("%ud\n", student.gender);
     printf("%lf\n", (double)student.examResult);
 }
+
