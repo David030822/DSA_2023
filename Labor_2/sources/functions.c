@@ -77,14 +77,14 @@ void printMatrix(int rows, int cols, float **pMatrix, const char *output)
     }
 }
 
-void deallocateMemoryForMatrix(int rows, int ***dpMatrix)
+void deallocateMemoryForMatrix(int rows, float ***dpMatrix)
 {
     for (int i = 0; i < rows; i++)
         free(dpMatrix[i]);
     free(dpMatrix);
 }
 
-float averageOfMatrixElements(int rows, int cols, int **pMatrix)
+float averageOfMatrixElements(int rows, int cols, float **pMatrix)
 {
     float sum = 0;
     for (int i = 0; i < rows; i++)
@@ -92,18 +92,18 @@ float averageOfMatrixElements(int rows, int cols, int **pMatrix)
         for (int j = 0; j < cols; j++)
             sum += (float)pMatrix[i][j];
     }
-    return (float ) sum/(float)(rows*cols);
+    return (float )sum/(float)(rows*cols);
 }
 
-void negToPos(int rows, int cols, int ***pMatrix)
+void negToPos(int rows, int cols, float **pMatrix)
 {
     for (int i = 0; i < rows; ++i)
     {
         for (int j = 0; j < cols; ++j)
         {
-            if(*pMatrix[i] < 0)
+            if(pMatrix[i][j] < 0)
             {
-                //*pMatrix[i] = *pMatrix[i] - (2 * (*pMatrix[i]));
+                pMatrix[i][j] = -1 * pMatrix[i][j];
             }
         }
     }

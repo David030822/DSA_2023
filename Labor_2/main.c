@@ -2,8 +2,8 @@
 
 int main()
 {
-    int n, oszlop, sor;
-    int * array;
+    int n, *array;
+    int oszlop, sor;
     float **matrix;
 
     /*beolvas(&n, &array, "be.txt");
@@ -12,10 +12,10 @@ int main()
 
     readMatrix(&sor, &oszlop, &matrix, "bematrix.txt");
     printMatrix(sor, oszlop, matrix, "CON");
-    //negToPos(sor, oszlop, &matrix);
+    negToPos(sor, oszlop, matrix);
     printMatrix(sor, oszlop, matrix, "kimenet.txt");
-    //printf("avg matrix: %f \n", averageOfMatrixElements(sor, oszlop, matrix));
-    //deallocateMemoryForMatrix(sor, &matrix);
+    printf("avg matrix: %f \n", averageOfMatrixElements(sor, oszlop, matrix));
+    deallocateMemoryForMatrix(sor, &matrix);
 
     return 0;
 }
