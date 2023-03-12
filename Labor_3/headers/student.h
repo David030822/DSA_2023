@@ -4,6 +4,7 @@
 
 #ifndef LABOR_3_STUDENT_H
 #define LABOR_3_STUDENT_H
+
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -27,8 +28,12 @@ typedef struct Student_t{
     double examResult;
 }Student_t;
 
-void readStudentDetails(Student_t *pStudent);
+void readStudentDetails(Student_t *pStudent, const char *input);
 void printStudent(Student_t student);
+void allocateMemoryForStudents(Student_t **dpStudents, int numberOfStudents);
+void readAllStudentsDetails(Student_t **dpStudents, const char *input);
+void printAllStudents(Student_t *pStudents, int numberOfStudents, const char *destination);
+int getNumberOfStudentsByGender(Student_t *pStudents, int numberOfStudents, enum Gender gender);
+
 
 #endif //LABOR_3_STUDENT_H
-
