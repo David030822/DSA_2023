@@ -4,6 +4,7 @@
 
 #ifndef LABOR2_FUNCTIONS_H
 #define LABOR2_FUNCTIONS_H
+
 #include <stdio.h>
 #include <stdlib.h>
 
