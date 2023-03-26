@@ -10,14 +10,9 @@ int main()
     Stack stack;
     createStack(strlen(expression1), &stack);
 
-    const char s[2] = " ";
-    char *token;
-    token = strtok(expression1, s);
-    while(token != NULL)
-    {
+    printf("%d\n", isnumber("7854"));
 
-        token = strtok(NULL, s);
-    }
+    printf("%d ", peek(postfix(stack, expression1)));
 
     return 0;
 }
