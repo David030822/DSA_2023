@@ -9,6 +9,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <stdbool.h>
+#include <ctype.h>
 #include "constants.h"
 
 typedef struct {
@@ -25,5 +26,7 @@ void push(Stack* stack, int item);
 int pop(Stack* stack);
 int peek(Stack stack);
 int size(Stack stack);
+bool isnumber(char *str);
+Stack postfix(Stack stack, char *postfix);
 
 #endif //LABOR_5_STACK_H
