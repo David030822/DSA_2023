@@ -1,4 +1,5 @@
 #include "headers/stack.h"
+#include "sources/stack.c"
 
 int main()
 {
