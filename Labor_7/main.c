@@ -1,4 +1,5 @@
 #include "headers/market.h"
+#include "sources/market.c"
 
 int main() {
 
@@ -16,6 +17,10 @@ int main() {
     char colour2[15];
     strcpy(colour2, enumToChar(vegetable2));
     printf("%s\n", colour2);
+    printToFile(vegetable2);
+
+    Vegetable vegetable3 = {"murok", 0.5, 1.2, 0.7, 2.1, 6};
+    printToFile(vegetable3);
 
     return 0;
 }
