@@ -9,6 +9,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <stdbool.h>
+#include <string.h>
 
 typedef struct Node{
     int data;
@@ -20,6 +21,6 @@ bool isEmpty(Node *head);
 void insertAtEnd(Node** head_ref, int new_data);
 void printList(Node* node);
 void deleteFromBeginning(Node** head_ref);
-
+void insertAtBeginning(Node **head_ref, int new_data);
 
 #endif //LABOR_8_SINGLE_LINKED_LIST_H

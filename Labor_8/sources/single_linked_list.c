@@ -38,14 +38,20 @@ void insertAtEnd(Node **head_ref, int new_data) {
 void printList(Node *node) {
     Node *first = node;
     while (node->next != first) {
-        printf("%d ", node->data);
+        printf("%c ", node->data);
         node = node->next;
     }
-    printf("%d\n", node->data);
+    printf("%c\n", node->data);
 }
 
 void deleteFromBeginning(Node **head_ref) {
     Node *temp = *head_ref;
-    //temp->next =
+    *head_ref = temp->next;
+    free(temp);
+}
 
+void insertAtBeginning(Node **head_ref, int new_data) {
+    Node *new_node = newNode(new_data);
+    new_node->next = (*head_ref);
+    (*head_ref) = new_node;
 }
