@@ -14,7 +14,7 @@ int main() {
     printList(node1);
     printList(node2);
 
-    int m = 0;
+    /*int m = 0;
     while (!(isEmpty(node1) || isEmpty(node2))) {
         insertAtEnd(&node3, (node1->data + node2->data + m) % 10);
         m = (node1->data + node2->data) / 10;
@@ -23,10 +23,10 @@ int main() {
     }
     if (m)
         insertAtEnd(&node3, m);
-    printList(node3);
+    printList(node3);*/
 
-    Node* node4 = NULL;
-   char character;
+    /*Node* node4 = NULL;
+    char character;
     do {
         scanf("%c", &character);
         if(strchr("aeiou", character)){
@@ -38,7 +38,7 @@ int main() {
         }
     }while(character != 'x');
 
-    printList(node4);
+    printList(node4);*/
 
     return 0;
 }
