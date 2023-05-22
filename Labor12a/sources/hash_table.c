@@ -2,7 +2,7 @@
 // Created by David on 2023. 05. 15..
 //
 
-#include "hash_table.h"
+#include "../headers/hash_table.h"
 
 int hashCode(int key){
     return key % CAPACITY;

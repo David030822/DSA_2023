@@ -1,4 +1,4 @@
-#include "hash_table.h"
+#include "headers/hash_table.h"
 
 int main() {
     HashTable hashTable;
